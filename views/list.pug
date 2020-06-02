@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+    head
+        title= "Github users that do not follow you back!"
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css")
+    body
+        h1.text-center Do not follow me list
+        div.row
+            div.col-md-6.offset-md-3
+               div.row
+                each user in results
+                    div.col-md-3
+                        div.card
+                            a.list-group-item.list-group-item-action(href= user.html_url)
+                                img.img-thumbnail(src= user.avatar_url)
+                                .card-body
+                                    h5.card-title.text-center= user.login

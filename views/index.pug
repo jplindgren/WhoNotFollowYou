@@ -1,0 +1,14 @@
+doctype html
+html(lang='en')
+    head
+        title= "Welcome to Github useless analyser"
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css")
+    body
+        h1 Welcome to Github useless analyser
+        div.container
+            div.row.align-items-center
+                div.col-md-6.offset-md-3
+                    h1.text-center Follow back list
+                    form(action="/github/nofollowback", method="POST")
+                        input.form-control(type="text", name="username", placeholder="Enter github username")
+                        input.form-control.btn.btn-outline-dark(type="submit", value="Submit")
