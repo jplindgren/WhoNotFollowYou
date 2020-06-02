@@ -6,7 +6,7 @@ var app = express();
 app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const port = 3333;
+const port = process.env.PORT || 3333;
 app.get('/', async (req, res) => {
     res.redirect('/github');
 });
