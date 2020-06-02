@@ -3,4 +3,4 @@
  
 ![Heroku](https://heroku-badge.herokuapp.com/?app=notfollowingme)
 
-https://notfollowingme.herokuapp.com/github
+https://notfollowingme.herokuapp.com
