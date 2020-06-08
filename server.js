@@ -11,6 +11,10 @@ app.get('/', async (req, res) => {
     res.redirect('/github');
 });
 
+app.get('/ping', async (req, res) => {
+    res.write("pong");
+});
+
 app.use('/github', githubRoutes);
 
 app.listen(port, () => console.log(`Listening to port ${port}`));
