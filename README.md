@@ -1,8 +1,11 @@
 # WhoNotFollowYou
   Node application using Github API to show who do you follow, that do not follow you.
-  It has a CD configured with github actions building and publishing a new image.
-  The docker hub repository has a webhook to call azure app services and deploy the application at every push to master.
+  Two deployments configured:
+     Heroku deployment.
+     Azure App Service Deployment configure. Github action build and publish an image to docker hub, a webhook tells azure that get the latest version and deploy the container.  
 
 ![Heroku](https://heroku-badge.herokuapp.com/?app=notfollowingme)
-
 https://notfollowingme.herokuapp.com
+
+Azure
+https://who-do-not-follow-me.azurewebsites.net/
